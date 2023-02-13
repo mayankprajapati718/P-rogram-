@@ -1,0 +1,15 @@
+import java.util.*;
+
+public class Conversion {
+    public static void main(String[] args) {
+        List<String> collect=new ArrayList<>();
+        collect.add("java");
+        collect.add("c++");
+        collect.add("python");
+        collect.add("c");
+        collect.add("spring framework");
+        ArrayList<String>take=new ArrayList<>();
+        take.addAll(collect);
+        System.out.println(take);
+    }
+}
