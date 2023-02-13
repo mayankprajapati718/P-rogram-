@@ -1,0 +1,24 @@
+public class Student {
+    private int studentId;
+    private int registrationId;
+    public Student(int s,int r){
+        this.studentId=s;
+        this.registrationId=r;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || getClass().hashCode() != obj.getClass().hashCode()) {
+            return false;}
+            Student student = (Student) obj;
+            return registrationId == student.registrationId;
+    }
+
+    public static void main(String[] args) {
+     Student s1=new Student(10,34);
+     Student s2=new Student(10,34);
+        System.out.println(s1.equals(s2));
+    }}
