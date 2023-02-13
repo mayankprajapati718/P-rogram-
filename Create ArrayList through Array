@@ -1,0 +1,17 @@
+import java.util.ArrayList;
+
+public class Array {
+    public static void intialize(int []x)
+    { ArrayList<Integer> a=new ArrayList<>();
+        for (int j:x){
+
+            a.add(j);
+        }
+        System.out.println(a);
+    }
+    public static void main(String[] args) {
+        int []y={2,23,4};
+        intialize(y);
+
+    }
+}
