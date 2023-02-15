@@ -1,0 +1,22 @@
+import java.util.HashMap;
+
+public class Occurrencre {
+
+
+        public static void main(String[]v){
+            int[]arr={3,1,2,4,3,5,4,6,6,4,4,3,2,1};
+            HashMap<Integer,Integer>frequency=new HashMap<>();
+            for(int i=0;i<arr.length;i++){
+
+                if(frequency.containsKey(arr[i])){
+                    frequency.put(i,(frequency.get(arr[i]))+1);
+            }else{
+      frequency.put(i,1);
+                }
+                }occurence(frequency);
+    }
+
+    private static void occurence(HashMap<Integer, Integer> frequency) {
+        System.out.println(frequency);
+    }
+}
