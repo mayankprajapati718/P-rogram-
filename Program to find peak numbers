@@ -1,0 +1,15 @@
+import java.util.ArrayList;
+///Program for the question -> in an array of numbers to find the list of peak numbers
+
+public class Main {
+    public static void main(String[]args){
+        int[]arr={1,2,3,99,0,4,56,78,687,9}; 
+        ArrayList<Integer>a=new ArrayList<>();
+        for(int i=1;i<arr.length;i++){
+           if(arr[i]>=arr[i-1]&& arr[i]>=arr[i+1]){
+               a.add(arr[i]);
+           }
+        }
+        System.out.println(a);
+    }
+}
