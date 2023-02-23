@@ -1,0 +1,13 @@
+public class Power {
+    public static double getpower(double x,int n){
+        if(x==0)return 0;
+        if(n==0)return 1;double result=1;
+        for (int i=0;i<n;i++){
+             result=result*x;
+
+        }return result;
+    }
+    public static void main(String[] args) {
+        System.out.println(getpower(6,3));
+    }
+}
