@@ -1,0 +1,21 @@
+import java.util.Arrays;
+
+public class Single {
+    public static void main(String[] args) {
+        int[]array={2,3,4,1,1,5,3,4,6,2};
+        getduplicate(array);
+    }
+
+    private static void getduplicate(int[]array) {
+        Arrays.sort(array);
+        for (int i=1;i<array.length-1;i++){
+            if(array[i-1]==array[i]){
+                System.out.println(array[i]+" is a duplicate element");i++;
+                if(array[i+1]==array[i]){
+                    System.out.println(array[i]+" is a duplicate element");i++;
+                }
+
+        }
+
+    }
+}}
